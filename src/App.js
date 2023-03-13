@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Section from './components/Section'
+import PortfolioContainer from './components/PortfolioContainer';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div>
-      <Nav />
-      <Header />
-      <Section />
+      <NavBar />
+      <PortfolioContainer />
+      <Footer />
     </div>
   );
 }
