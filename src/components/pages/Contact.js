@@ -1,42 +1,89 @@
 import React, { useState } from "react";
-// import { checkPassword, validateEmail } from "";
+import { validateEmail } from "../../utils/helpers";
 
 function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleInputChange = (e) => {
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+        if(inputType === 'name'){
+            setName(inputValue);
+        }else if(inputType === 'email'){
+            setEmail(inputValue);
+        }else{
+            setMessage(inputValue);
+        }
+
+        if(!name){
+            setErrorMessage('Please enter your name.');
+            return;
+        }
+        if(!validateEmail(email)){
+            setErrorMessage('Please enter a valid email.');
+            return;
+        }
+        if(!message){
+            setErrorMessage('Please enter a message.');
+            return;
+        }
+    };
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+
+        
+
+        alert(`Thank you, ${name}!`);
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
+
+
     return (
-        <div class="form-floating mb-3">
-            <input type="name" class="form-control" id="floatingInput" placeholder="Name: ">
-            <label for="floatingInput">Name: </label><br/>
+        <div>
+            <form className="form">
+                <input 
+                value={name}
+                name="name"
+                onChange={handleInputChange}
+                type="name" 
+                placeholder="Name: " 
+                /><br />
 
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email: </label>
+                <input 
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                type="email" 
+                placeholder="name@example.com"
+                /><br />
 
-            <input type="message" class="form-control" id="floatingInput" placeholder="Message: ">
-            <label for="floatingInput">Message: </label>
+                <textarea 
+                value={message}
+                name="message"
+                onChange={handleInputChange}
+                type="message" 
+                placeholder="Message: "
+                /><br />
 
-            <button class="btn btn-primary" type="submit">Submit</button>
+                <button 
+                className="btn btn-primary" type="submit" onClick={handleFormSubmit}>Submit</button>
+            </form>
+
+            {errorMessage && (
+                <div>
+                    <p className="error-text">{errorMessage}</p>
+                </div>
+            )}
         </div>
-
-    )
+    );
 }
+
+export default ContactForm;
