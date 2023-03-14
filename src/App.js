@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioContainer from './components/PortfolioContainer';
-import './App.css'
+import './styles/App.css'
 // import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 

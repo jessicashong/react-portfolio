@@ -34,18 +34,18 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--vandyke);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--tearose);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--tearose);
 }
 
 @keyframes App-logo-spin {
@@ -65,18 +65,18 @@ a.nav-link .nav-pills{
   background-color: var(--vandyke);
 }
 
+/* div{
+  display: flex;
+} */
+
 .footer {
   position: absolute;
   bottom: 20px;
   width: 100%;
+  /* margin: 1%; */
+  padding: 1%;
   color: var(--sandy);
-
-}
-
-.footer-icon {
-  display: flex;
-  justify-content: center;
-  color: var(--sandy);
-
+  /* display: flex;
+  justify-content: center; */
 
 }
