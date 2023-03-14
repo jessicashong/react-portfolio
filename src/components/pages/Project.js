@@ -1,17 +1,31 @@
 import React from "react";
 
-export default function Projects({ projects }){
+const styles = {
+    cardStyles: {
+        margin: '1%',
+        width: '18rem',
+    },
+    containerStyles: {
+        margin: '1%',
+        display: 'flex',
+        justifyContent: 'space-around',
+        // flex: 1,
+        
+    }
+}
+
+export default function Project({ projects }){
     return(
-        <div className="container">
-            {projects.map((projects) => {
-                <div className="card" style="width: 18rem;"key={projects.id}>
-                    <img src={projects.image}className="card-img-top" alt={projects.name}/>
+        <div className="container row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-evenly" style={styles.containerStyles}>
+            {projects.map((projects) => (
+                <div className="card col" style={styles.cardStyles} key={projects.id}>
+                    <img src={projects.image}className="card-img-top" alt={projects.name} />
                     <div className="card-body">
                         <h5 className="card-title" href={projects.github}>{projects.name}</h5>
-                        <p class="card-text">(projects.tech)</p>
+                        <p className="card-text">{projects.tech}</p>
                     </div>
                 </div>
-            })}
+            ))}
         </div>
     )
 }

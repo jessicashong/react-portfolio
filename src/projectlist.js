@@ -18,7 +18,7 @@ const projects = [
         name: "Only Flix",
         github: "https://github.com/RosalvaMartinez/OnlyFlix",
         tech: "JavaScript, Tailwind",
-        // image: ,
+        image: './src/images/OnlyFlix_.png',
     },
     {
         id: 4,

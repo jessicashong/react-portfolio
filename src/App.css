@@ -6,6 +6,18 @@
   --vandyke: #553d36ff;
 }
 
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--vandyke);
+}
+
+/* APP */
 .App {
   text-align: center;
 }
@@ -43,4 +55,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a.nav-link .nav-item{
+  color: var(--tearose);
+}
+
+a.nav-link .nav-pills{
+  background-color: var(--vandyke);
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  color: var(--sandy);
+
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  color: var(--sandy);
+
+
 }

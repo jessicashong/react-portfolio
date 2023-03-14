@@ -74,7 +74,7 @@ function ContactForm() {
                 /><br />
 
                 <button 
-                className="btn btn-primary" type="submit" onClick={handleFormSubmit}>Submit</button>
+                className="btn btn-primary" type="submit" onClick={handleFormSubmit}>Send</button>
             </form>
 
             {errorMessage && (
