@@ -4,10 +4,10 @@
   --sandy: #f19953ff;
   --tearose: #e9bcb7ff;
   --vandyke: #553d36ff;
+  --cornsilk: #fff8dc;
 }
 
 .primary{
-  background-color: var(--vandyke);
 }
 
 * {
@@ -17,13 +17,41 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body {
+html,
+div{
+  background-color: var(--vandyke);
+
+}
+
+h1,
+h2,
+h3{
+  color: var(--tearose);
+}
+
+p,
+li{
+  color: var(--cornsilk)
+}
+
+.avatar {
+  width: 10rem;
+}
+
+.nav {
+  --bs-nav-link-color: var(--tearose);
+  --bs-nav-link-hover-color: var(--vandyke);
+}
+
+.nav-link.active .nav-pills{
+  color: var(--tearose);
   background-color: var(--vandyke);
 }
 
-img {
-  width: 10rem;
+.card-img {
+  height: 10rem;
 }
+
 
 /* APP */
 .App {
@@ -65,14 +93,7 @@ img {
   }
 }
 
-.nav-bar-toggler{
-  color: var(--tearose);
-}
 
-.nav-link.active .nav-pills{
-  background-color: var(--vandyke);
-  color: var(--tearose);
-}
 
 /* div{
   display: flex;

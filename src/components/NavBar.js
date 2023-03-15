@@ -3,13 +3,12 @@ import React from "react";
 const styles = {
     display: 'flex',
     justifyContent: 'flex-end',
-    height: '5rem',
-
+    color: '#553d36ff',
 }
 
 function NavBar({ currentPage, handlePageChange }) {
     return (
-        <div style={styles}>
+        <div style={styles} className="nav-container">
             <ul className="nav nav-pills nav-fill">
                 <li className="nav-item">
                     <a href="#about" onClick={() => handlePageChange('About')} 

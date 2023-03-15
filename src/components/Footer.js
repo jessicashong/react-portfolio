@@ -1,19 +1,5 @@
 import React from "react";
 
-const styles = {
-    footerStyles: {
-        
-        textDecoration: 'none',
-        display: 'flex',
-        justifyContent: 'center',
-    },
-    linkStyles: {
-        textDecoration: "none",
-
-    }
-}
-
-
 export default function Footer() {
     return (
         <div className="footer row">
