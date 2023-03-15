@@ -52,6 +52,10 @@ li{
   height: 10rem;
 }
 
+.active {
+  background-color: red;
+}
+
 
 /* APP */
 .App {
