@@ -51,11 +51,24 @@ li{
 .card-img {
   height: 10rem;
 }
+/* .nav-link:active {
+  background-color: var(--chartreuse);
+  color: var(--vandyke);
+} */
 
-.active {
-  background-color: red;
+a.nav-link {
+  background-color: var(--vandyke);
+  color: var(--slate);
 }
 
+a.nav-link:hover {
+  color: var(--chartreuse);
+}
+
+a.nav-link.activeBtn {
+  background-color: var(--slate);
+  color: var(--vandyke);
+}
 
 /* APP */
 .App {
