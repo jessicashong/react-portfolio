@@ -6,6 +6,10 @@
   --vandyke: #553d36ff;
 }
 
+.primary{
+  background-color: var(--vandyke);
+}
+
 * {
   box-sizing: border-box;
   /* margin: 0;
@@ -15,6 +19,10 @@
 
 body {
   background-color: var(--vandyke);
+}
+
+img {
+  width: 10rem;
 }
 
 /* APP */
@@ -57,12 +65,13 @@ body {
   }
 }
 
-a.nav-link .nav-item{
+.nav-bar-toggler{
   color: var(--tearose);
 }
 
-a.nav-link .nav-pills{
+.nav-link.active .nav-pills{
   background-color: var(--vandyke);
+  color: var(--tearose);
 }
 
 /* div{
