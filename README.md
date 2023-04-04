@@ -14,6 +14,6 @@ This website is a portfolio platform for Jessica Hong including short bio, links
 
 ## Links
 
-[Portfolio Github Repo](https://github.com/jessicashong/professional-portfolio)
+[Portfolio Github Repo](https://github.com/jessicashong/react-portfolio)
 
-[Professional Portfolio](https://jessicashong.github.io/professional-portfolio/)
+[Portfolio]( https://jessicashong.github.io/react-portfolio/)
