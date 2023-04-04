@@ -7,9 +7,6 @@
   --cornsilk: #fff8dc;
 }
 
-.primary{
-}
-
 * {
   box-sizing: border-box;
   /* margin: 0;
@@ -19,26 +16,25 @@
 
 html,
 div{
-  background-color: var(--vandyke);
+  background-color: var(--cornsilk);
 
 }
 
 h1,
 h2,
 h3{
-  color: var(--tearose);
+  color: var(--vandyke);
 }
 
-p,
-li{
-  color: var(--cornsilk)
+p, li{
+  color: var(--sandy)
 }
 
 .avatar {
   width: 10rem;
 }
 
-.nav {
+/* .nav {
   --bs-nav-link-color: var(--tearose);
   --bs-nav-link-hover-color: var(--vandyke);
 }
@@ -46,27 +42,59 @@ li{
 .nav-link.active .nav-pills{
   color: var(--tearose);
   background-color: var(--vandyke);
-}
+} */
 
 .card-img {
   height: 10rem;
+  justify-content: center;
+}
+
+.resume,
+.col, h1, div.col {
+  margin: 1rem;
+}
+
+div.card.col {
+  padding: 0;
+  border-color: var(--vandyke);
+}
+div.card-body{
+  border-radius: 0 0.375rem 0.375rem 0.375rem;
 }
 /* .nav-link:active {
   background-color: var(--chartreuse);
   color: var(--vandyke);
 } */
 
-a.nav-link {
-  background-color: var(--vandyke);
-  color: var(--slate);
+a.nav-link, h5.card-title, svg, #resume {
+  background-color: var(--cornsilk);
+  color: var(--vandyke);
+  text-decoration: none;
 }
 
-a.nav-link:hover {
-  color: var(--chartreuse);
+button.btn.btn-primary {
+  background-color: var(--sandy);
+  color: var(--cornsilk);
+  border-color: var(--sandy);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+button.btn.btn-primary:hover {
+  background-color: var(--cornsilk);
+  border-color: var(--cornsilk);
+  color: var(--sandy)
+}
+
+a.nav-link:hover,
+svg:hover, #resume:hover, 
+h5.card-title:hover {
+  color: var(--sandy);
 }
 
 a.nav-link.activeBtn {
-  background-color: var(--slate);
+  background-color: var(--sandy);
   color: var(--vandyke);
 }
 
@@ -110,6 +138,16 @@ a.nav-link.activeBtn {
   }
 }
 
+.contact-form {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  /* border: solid 1px;
+  border-color: var(--vandyke); */
+}
+
 
 
 /* div{
@@ -117,12 +155,12 @@ a.nav-link.activeBtn {
 } */
 
 .footer {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
   width: 100%;
   /* margin: 1%; */
   padding: 1%;
-  color: var(--sandy);
   /* display: flex;
   justify-content: center; */
 
