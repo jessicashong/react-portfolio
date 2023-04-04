@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.264a9183.css",
-    "main.js": "/react-portfolio/static/js/main.37cf2f60.js",
+    "main.css": "/react-portfolio/static/css/main.6709b185.css",
+    "main.js": "/react-portfolio/static/js/main.c2b592c4.js",
+    "static/media/onlyflix.png": "/react-portfolio/static/media/onlyflix.01e0caa19adcbba6eb75.png",
+    "static/media/bexarmarket.jpg": "/react-portfolio/static/media/bexarmarket.883c6725195b527ea42d.jpg",
+    "static/media/yougoalgirl.png": "/react-portfolio/static/media/yougoalgirl.19ec5e28bfd905cb976f.png",
+    "static/media/codequiz.jpg": "/react-portfolio/static/media/codequiz.1815797aaf43c03cc5bd.jpg",
+    "static/media/preworkstudyguide.jpg": "/react-portfolio/static/media/preworkstudyguide.5cb8edaa2fe46bfc51b6.jpg",
     "static/media/avatar_hi.jpg": "/react-portfolio/static/media/avatar_hi.0ecd2c384d00a48e9f23.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.264a9183.css.map": "/react-portfolio/static/css/main.264a9183.css.map",
-    "main.37cf2f60.js.map": "/react-portfolio/static/js/main.37cf2f60.js.map"
+    "main.6709b185.css.map": "/react-portfolio/static/css/main.6709b185.css.map",
+    "main.c2b592c4.js.map": "/react-portfolio/static/js/main.c2b592c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.264a9183.css",
-    "static/js/main.37cf2f60.js"
+    "static/css/main.6709b185.css",
+    "static/js/main.c2b592c4.js"
   ]
 }
