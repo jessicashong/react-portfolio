@@ -2,6 +2,7 @@ import onlyflix from './images/onlyflix.png';
 import codequiz from './images/codequiz.jpg';
 import prework from './images/preworkstudyguide.jpg';
 import yougoalgirl from './images/yougoalgirl.png';
+import bexarmarket from './images/bexarmarket.jpg';
 
 const projects = [
     {
@@ -31,6 +32,13 @@ const projects = [
         github: "https://github.com/chloeeh/you-goal-girl/",
         tech: "JavaScript, Node, Express",
         image: yougoalgirl,
+    },
+    {
+        id: 5,
+        name: "Bexar Market",
+        github: "https://github.com/jessicashong/bexar-market",
+        tech: "MERN Stack",
+        image: bexarmarket,
     },
 ];
 
